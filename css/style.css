@@ -1,0 +1,177 @@
+:root{
+    --theme-c-purple: #9929fb;
+    --theme-c-light-purple:#f3ebfe;
+    --theme-purple-dark: #552f76;
+    --theme--bg-grey: #f0f1f3 ;
+    --theme--white: #fff;
+    --theme-bg-footer: #2a374a;
+}
+
+
+
+section{
+    padding: 80px 0;
+}
+
+/* header section start */
+.navbar .b{
+    background-color: var(--theme-c-purple);
+}
+.navbar ul li:first-child,
+.navbar ul li:last-child{
+    background-color: var(--theme-c-purple);
+    border-radius: 5px;
+}
+/* header section end */
+
+/* hero section start */
+.hero .hero-content a{
+    background-color: var(--theme-c-purple);
+}
+
+.hero .col-4{
+    background-color: var(--theme-c-light-purple);
+}
+.hero .card{
+    height: 100px;
+    width: 180px;
+    margin: 0 10px;
+    background-color: var(--theme-c-light-purple);
+    border: 0;
+}
+/* hero section end */
+
+.about .about-content a{
+    background-color: var(--theme-c-purple);
+
+
+}
+.process,
+.service{
+    background: var(--theme--bg-grey);
+}
+.process .process-cards .card{
+    width: 300px;
+    height: 250px;
+}
+.process .process-cards .process-card-item{
+    width: 80px;
+    height: 80px;
+    background: var(--theme-c-light-purple);
+}
+.process-card-item .bi-calendar2-minus,
+.process-card-item .bi-graph-up,
+.process-card-item .bi-pencil,
+.process-card-item .bi-laptop{
+    color: var(--theme-c-purple);
+}
+
+.process-cards .card{
+    transition: all 0.3s ease-in-out;
+}
+.process-cards .card:hover .process-card-item{
+    background: var(--theme-c-purple);
+}
+
+.process-cards .card:hover .bi-calendar2-minus,
+.process-cards .card:hover .bi-graph-up,
+.process-cards .card:hover .bi-pencil,
+.process-cards .card:hover .bi-laptop{
+    color: var(--theme--white);
+}
+
+.process-cards .card:hover{
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+.portfolio-content button,
+.portfolio-project button,
+.service-content button,
+.contact-content button{
+    background: var(--theme-c-purple);
+    transition: all 0.3s ease-in-out;
+}
+.portfolio-content button:hover,
+.portfolio-project button:hover,
+.service-content button:hover,
+.contact-content button:hover{
+    background-color: var(--theme-purple-dark);
+    scale: 1.025;
+}
+.blog .blog-card{
+    transition: all 0.3s ease-in-out;
+}
+.blog .blog-card:hover{
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+.service .service-card{
+    transition: all 0.1s linear;
+}
+.service .service-card:hover{
+    border-left: 6px solid var(--theme-c-purple);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+
+.contact .bi-geo-alt-fill,
+.contact .bi-envelope,
+.contact .bi-telephone-fill{
+    background: var(--theme-c-light-purple);
+    color: var(--theme-c-purple);
+}
+.contact .contact-card-item:hover .bi-geo-alt-fill,
+.contact .contact-card-item:hover .bi-envelope,
+.contact .contact-card-item:hover .bi-telephone-fill{
+    background: var(--theme-c-purple);
+    color: var(--theme--white);
+
+}
+.contact .contact-card-item:hover{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+.contact .fa-facebook-f,
+.contact .fa-dribbble,
+.contact .fa-instagram,
+.contact .fa-linkedin,
+.contact .fa-behance{
+    color: var(--theme-c-purple);
+}
+
+.contact li:hover{
+    background: var(--theme-c-purple);
+    border-radius: 5px;
+}
+.contact li:hover .fa-facebook-f,
+.contact li:hover .fa-dribbble,
+.contact li:hover .fa-instagram,
+.contact li:hover .fa-linkedin,
+.contact li:hover .fa-behance{
+    color: var(--theme--white);
+    transition: all 0.3s ease;
+}
+.contact input:focus{
+    outline: 0;
+}
+footer{
+    background: var(--theme-bg-footer);
+    position: relative;
+}
+footer .logo{
+    width: 50px;
+}
+footer .footer-content ul li{
+    position: relative;
+    overflow: hidden;
+}
+footer .footer-content li:after{
+    content: '';
+    width: 100%;
+    height: 3px;
+    background: var(--theme--white);
+    position: absolute;
+    top: 105%;
+    transition: all 0.3s linear;
+}
+footer ul li:hover::after{
+    top: 80%;
+    left: 0;
+
+}
