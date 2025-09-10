@@ -28,8 +28,12 @@ section{
 /* header section end */
 
 /* hero section start */
-.hero .hero-content a{
+.hero .hero-content button{
     background-color: var(--theme-c-purple);
+    transition: all 0.3s ease-in-out;
+}
+.hero .hero-content button:hover{
+    scale: 1.025;
 }
 
 .hero .col-4{
@@ -44,10 +48,8 @@ section{
 }
 /* hero section end */
 
-.about .about-content a{
+.about .about-content button{
     background-color: var(--theme-c-purple);
-
-
 }
 .process,
 .service{
@@ -113,6 +115,17 @@ section{
     border-left: 6px solid var(--theme-c-purple);
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
 }
+/* client section start */
+.carousel-indicators [data-bs-target]{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.carousel-indicators{
+    z-index: 0 !important;
+}
+/* client section end */
 
 .contact .bi-geo-alt-fill,
 .contact .bi-envelope,
@@ -130,29 +143,36 @@ section{
 .contact .contact-card-item:hover{
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
 }
-.contact .fa-facebook-f,
-.contact .fa-dribbble,
-.contact .fa-instagram,
-.contact .fa-linkedin,
-.contact .fa-behance{
+.contact i,
+.about-content i{
     color: var(--theme-c-purple);
 }
 
-.contact li:hover{
+.contact li:hover,
+.about-content li:hover{
     background: var(--theme-c-purple);
     border-radius: 5px;
 }
-.contact li:hover .fa-facebook-f,
-.contact li:hover .fa-dribbble,
-.contact li:hover .fa-instagram,
-.contact li:hover .fa-linkedin,
-.contact li:hover .fa-behance{
+.contact li:hover i,
+.about-content li:hover i{
     color: var(--theme--white);
     transition: all 0.3s ease;
 }
 .contact input:focus{
     outline: 0;
 }
+
+.form .form-control:focus{
+    color: var(--theme-c-purple);
+    border-bottom: 2px solid var(--theme-c-purple);
+}
+
+.form .form-control:focus::placeholder{
+    color: var(--theme-c-purple);
+}
+
+
+/* footer section start */
 footer{
     background: var(--theme-bg-footer);
     position: relative;
@@ -178,3 +198,5 @@ footer ul li:hover::after{
     left: 0;
 
 }
+/* footer section start */
+
