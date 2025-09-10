@@ -5,6 +5,7 @@
     --theme--bg-grey: #f0f1f3 ;
     --theme--white: #fff;
     --theme-bg-footer: #2a374a;
+    --theme-hover-grey: #d5cfcf66;
 }
 .bg-radial-gradient{
     background :radial-gradient(circle at 12% 100%, hsla(37, 61%, 81%, 0.961) 1px, #0000 15%), radial-gradient(circle at 95% -15%, #da4df166 5%, #0000 30%), radial-gradient(circle at 100%, #c4f5e9b2 5%,#0000 35%);
@@ -17,6 +18,16 @@ section{
 }
 
 /* header section start */
+.navbar ul li{
+    transition: all 0.3s ease-in-out;
+}
+.navbar ul li:hover{
+    background-color: var(--theme-hover-grey);
+    border-radius: 5px;
+}
+.navbar ul li:hover a{
+    color: var(--theme-c-purple);
+}
 .navbar .b{
     background-color: var(--theme-c-purple);
 }
@@ -28,6 +39,14 @@ section{
 /* header section end */
 
 /* hero section start */
+.bg-highlight {
+    background: linear-gradient(to top, #ffc8c8 40%, transparent 40%);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
 .hero .hero-content button{
     background-color: var(--theme-c-purple);
     transition: all 0.3s ease-in-out;
